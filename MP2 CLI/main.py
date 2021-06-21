@@ -1,6 +1,6 @@
 # made by VDoring. || https://github.com/VDoring
-
 # main.py는 모든 프로그램 기능 흐름의 중심이 되는 곳입니다.
+
 import common_cli as cli
 import play_all_1_TopBottom as pa1
 import play_all_2_BottomTop as pa2

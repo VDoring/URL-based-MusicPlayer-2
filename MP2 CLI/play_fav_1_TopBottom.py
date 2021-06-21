@@ -9,6 +9,10 @@ import common_func as func
 #즐겨찾기 플레이 모드->위에서 아래로 곡을 실행합니다.
 #리턴값:없음
 def playTopBottom():
+    # 공통으로 사용되는 변수 초기화 #
+    val.mlist_available_links_count = 0
+    val.mlist_current_links_play_count = 0
+
     # Mlist.txt 파일 존재 확인 #
     is_file_available = func.checkMlistFile()
     if is_file_available == False: # 파일이 인식되지 않는다면
@@ -36,5 +40,3 @@ def playTopBottom():
         user_select = cli.screenAskNextMusic() # 다음 곡을 재생할건지 묻기
         if user_select == False: # 사용자가 그만 듣겠다고 답하면
             return
-
-    val.clearCommonValue() # 공통으로 사용된 변수 초기화 -> 작동안함. 이유는 모르겠음
