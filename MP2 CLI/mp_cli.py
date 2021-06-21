@@ -2,6 +2,8 @@
 import os
 import time
 
+import value as val
+
 #by VDoring. 2021.06.19
 #시작화면을 출력하고 메뉴를 선택하게 합니다.
 #리턴값: 1,2
@@ -89,7 +91,7 @@ def screenPlaytypeAll():
                 return 3
             elif int(user_select) == 4: # 유저 입력값이 4일때
                 return 4
-            else: # 유저 입력값이 1이나 2가 아닐때
+            else: # 유저 입력값이 1,2,3,4가 아닐때
                 print('[!] Choose from 1,2,3,4 [!]')
                 time.sleep(0.75)
         else: # 입력값에 문자가 들어갔을 경우
@@ -120,8 +122,33 @@ def screenPlaytypeFav():
                 return 3
             elif int(user_select) == 4: # 유저 입력값이 4일때
                 return 4
-            else: # 유저 입력값이 1이나 2가 아닐때
+            else: # 유저 입력값이 1,2,3,4가 아닐때
                 print('[!] Choose from 1,2,3,4 [!]')
+                time.sleep(0.75)
+        else: # 입력값에 문자가 들어갔을 경우
+            print('[!] Please enter a number! [!]')
+            time.sleep(0.75)
+
+
+#by VDoring. 2021.06.20
+#다음 곡을 재생할지 묻는 텍스트를 출력하고 입력을 기다립니다.
+#반환값: True, False
+def screenAskNextMusic():
+     while True:
+        os.system('cls') # 화면 지우기
+        print('Move on to the next URL? [%d/%d]\n'%(val.mlist_current_links_play_count, val.mlist_available_links_count))
+        print('[1] Yes')
+        print('[2] No')
+        print('\n> ',end='')
+        user_select = input()
+
+        if user_select.isdigit():
+            if int(user_select) == 1: # Yes일때
+                return True
+            elif int(user_select) == 2: # No일때
+                return False
+            else: # 유저 입력값이 1이나 2가 아닐때
+                print('[!] Choose from 1,2 [!]')
                 time.sleep(0.75)
         else: # 입력값에 문자가 들어갔을 경우
             print('[!] Please enter a number! [!]')
