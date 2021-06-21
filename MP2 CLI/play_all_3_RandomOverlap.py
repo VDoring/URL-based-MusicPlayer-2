@@ -27,6 +27,7 @@ def playRandomOverlap():
 
     # 링크 실행 #
     mlist.seek(0) # 파일 라인을 처음 위치로 이동
+    random.shuffle(mlist_available_links_locate) # 첫 곡을 랜덤으로 지정하기 위해 리스트 섞기
     for i in mlist_available_links_locate: # 사용가능한 링크 수만큼 반복
         random.shuffle(mlist_available_links_locate) # 중첩되는 랜덤재생을 위해 리스트 섞기
         line_index = mlist_all_lines_index[i] # 파일의 한 라인의 텍스트를 저장
