@@ -6,9 +6,9 @@ import common_value as val
 import common_func as func
 
 #by VDoring. 2021.06.21
-#즐겨찾기 플레이 모드->위에서 아래로 곡을 실행합니다.
+#즐겨찾기 플레이 모드->아래에서 위로 곡을 실행합니다.
 #리턴값:없음
-def playTopBottom():
+def playBottomTop():
     # Mlist.txt 파일 존재 확인 #
     is_file_available = func.checkMlistFile()
     if is_file_available == False: # 파일이 인식되지 않는다면
@@ -23,6 +23,7 @@ def playTopBottom():
         if 'http' in mlist_all_lines_index[i] and '--' in mlist_all_lines_index[i]: # 즐겨찾기 표시된 링크인 경우
             mlist_available_links_locate.append(i) # 링크가 들어있는 위치를 리스트에 저장
             val.mlist_available_links_count += 1 # 파일 속 사용가능한 링크의 개수 +1
+    mlist_available_links_locate.reverse() # Bottom to Top 재생을 위해 리스트 거꾸로 뒤집기
 
     # 링크 실행 #
     mlist.seek(0) # 파일 라인을 처음 위치로 이동
