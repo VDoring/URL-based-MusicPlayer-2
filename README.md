@@ -2,7 +2,7 @@
 
 ## Introduction
 
-- #### 파이썬으로 다시 태어난 URL 기반 음악 플레이어.
+- #### 파이썬으로 다시 태어난 .txt & URL 기반 음악 플레이어.
 
 ## Motivation
 
