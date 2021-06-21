@@ -37,4 +37,4 @@ def playTopBottom():
         if user_select == False: # 사용자가 그만 듣겠다고 답하면
             return
 
-    val.clearCommonValue() # 공통으로 사용된 변수 초기화
+    val.clearCommonValue() # 공통으로 사용된 변수 초기화 -> 작동안함. 이유는 모르겠음

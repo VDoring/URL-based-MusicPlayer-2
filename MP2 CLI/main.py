@@ -4,6 +4,12 @@
 import common_cli as cli
 import play_all_1_TopBottom as pa1
 import play_all_2_BottomTop as pa2
+import play_all_3_RandomOverlap as pa3
+import play_all_4_RandomNoOverlap as pa4
+import play_fav_1_TopBottom as pf1
+import play_fav_2_BottomTop as pf2
+import play_fav_3_RandomOverlap as pf3
+import play_fav_4_RandomNoOverlap as pf4
 
 # 메인화면
 while True:
@@ -17,9 +23,9 @@ while True:
             elif user_select == 2: # [2] from Bottom to Top를 선택할경우
                 pa2.playBottomTop()
             elif user_select == 3: # [3] Overlap을 선택할경우
-                pass
+                pa3.playRandomOverlap()
             elif user_select == 4: # [4] No Overlap을 선택할경우
-                pass
+                pa4.playRandomNoOverlap()
 
         else: # 즐겨찾기 플레이모드를 선택할 경우
             user_select = cli.screenPlaytypeFav()
