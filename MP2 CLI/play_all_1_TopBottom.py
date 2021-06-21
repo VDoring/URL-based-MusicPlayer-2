@@ -3,12 +3,16 @@ import time
 
 import common_cli as cli
 import common_value as val
+import common_func as func
 
 #by VDoring. 2021.06.20
 #전체플레이 모드->위에서 아래로 곡을 실행합니다.
 #리턴값:없음
 def playTopBottom():
-    
+    # Mlist.txt 파일 존재 확인 #
+    is_file_available = func.checkMlistFile()
+    if is_file_available == False: # 파일이 인식되지 않는다면
+        return
 
     # 유효한 링크 수 파악 #
     mlist = open('Mlist.txt','r', encoding='utf-8') # 파일 열기
@@ -30,7 +34,7 @@ def playTopBottom():
         if val.mlist_available_links_count == val.mlist_current_links_play_count: # 지금까지 재생한 링크의 수와 사용가능한 링크의 수가 같다면(링크를 다 재생했다면)
             return
         user_select = cli.screenAskNextMusic() # 다음 곡을 재생할건지 묻기
-        if user_select == False:
+        if user_select == False: # 사용자가 그만 듣겠다고 답하면
             return
 
     val.clearCommonValue() # 공통으로 사용된 변수 초기화

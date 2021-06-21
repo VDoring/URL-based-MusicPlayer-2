@@ -36,7 +36,7 @@ def screenPlaytype():
         os.system('cls') # 화면 지우기
         print('Choose play mode..\n')
         print('[1] All')
-        print('[2] Favorite(--) only')
+        print('[2] Favorite')
         print('\n> ',end='')
         user_select = input()
 
