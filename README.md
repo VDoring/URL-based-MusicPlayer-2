@@ -13,4 +13,4 @@
 ## Download
 https://github.com/VDoring/URL-based-MusicPlayer-2/releases
 
-under development!
+자세한 내용은 추후 추가 예정입니다!
