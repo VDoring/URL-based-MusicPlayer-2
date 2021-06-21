@@ -2,7 +2,7 @@
 
 ## Introduction
 
-- #### .txt & URL 기반 음악 플레이어.
+- #### .txt 파일 & URL 기반 음악 플레이어.
 
 ## Motivation
 
