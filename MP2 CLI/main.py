@@ -30,13 +30,13 @@ while True:
         else: # 즐겨찾기 플레이모드를 선택할 경우
             user_select = cli.screenPlaytypeFav()
             if user_select == 1: # [1] from Top to Bottom를 선택할경우
-                pass
+                pf1.playTopBottom()
             elif user_select == 2: # [2] from Bottom to Top를 선택할경우
-                pass
+                pf2.playBottomTop()
             elif user_select == 3: # [3] Overlap을 선택할경우
-                pass
+                pf3.playRandomOverlap()
             elif user_select == 4: # [4] No Overlap을 선택할경우
-                pass
+                pf4.playRandomNoOverlap()
 
     else: # Explanation을 선택할경우
         cli.screenExplanation()
