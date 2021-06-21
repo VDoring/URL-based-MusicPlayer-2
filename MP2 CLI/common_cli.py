@@ -59,13 +59,15 @@ def screenPlaytype():
 def screenExplanation():
     os.system('cls') # 화면 지우기
     print('< VDoring\'s URL-based MusicPlayer 2 >')
-    print('이 프로그램은 .txt파일에 음악 등의 링크를 저장해 작업을 하시는 분들을 위해 보다 편리하게 링크를 실행할 수 있게 도와주는 프로그램입니다.')
-    print('{사용법}')
+    print('이 프로그램은 .txt파일에 음악 등의 링크를 저장해 특정 작업을 하시는 분들을 대상으로 빠른 링크 실행을 도와주는 프로그램입니다.')
+    print('\n{사용법}')
     print('1. Mlist.txt에 자신이 원하는 인터넷 링크를 넣습니다.')
     print('2. Mlist.txt 파일을 저장한 후 해당 프로그램을 실행합니다.')
-    print('3. 자신이 원하는 재생 모드를 선택해 사용합니다.')
-    print('{참고사항}')
-    print('1. Mlist.txt에 링크를 넣을때 메모도 같이 하고 싶다면 \'space\'키를 이용해 링크와 구분하여 메모하면 됩니다.')
+    print('3. 자신이 원하는 재생 모드를 선택합니다.')
+    print('(자세한 설명은 GitHub을 참조하세요)')
+    print('\n{참고사항}')
+    print('1. Mlist.txt에 링크를 넣을때 메모도 같이 하고 싶다면 \'space\'키를 이용해 링크와 구분해야합니다!')
+    print('\n< GitHub link: https://github.com/VDoring/URL-based-MusicPlayer-2 >\n\n\n')
     os.system('pause')
 
 #by VDoring. 2021.06.19
