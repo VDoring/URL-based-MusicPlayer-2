@@ -1,7 +1,7 @@
 # made by VDoring. || https://github.com/VDoring
 
 # main.py는 모든 프로그램 기능 흐름의 중심이 되는 곳입니다.
-import mp_cli as cli
+import common_cli as cli
 import play_all_1_TopBottom as pa1
 import play_all_2_BottomTop as pa2
 
@@ -15,7 +15,7 @@ while True:
             if user_select == 1: # [1] from Top to Bottom를 선택할경우
                 pa1.playTopBottom()
             elif user_select == 2: # [2] from Bottom to Top를 선택할경우
-                pass
+                pa2.playBottomTop()
             elif user_select == 3: # [3] Overlap을 선택할경우
                 pass
             elif user_select == 4: # [4] No Overlap을 선택할경우

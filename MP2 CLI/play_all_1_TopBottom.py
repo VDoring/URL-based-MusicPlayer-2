@@ -1,20 +1,14 @@
 import os
 import time
 
-import mp_cli as cli
-import value as val
+import common_cli as cli
+import common_value as val
 
 #by VDoring. 2021.06.20
-#전체플레이 모드-위에서 아래순서로 곡을 실행합니다.
+#전체플레이 모드->위에서 아래로 곡을 실행합니다.
 #리턴값:없음
 def playTopBottom():
-    # Mlist.txt 파일 존재 확인 #
-    is_file_available = os.path.isfile('Mlist.txt') # Mlist.txt 파일이 올바른 위치에 존재하는지 확인
-    if is_file_available == False: # Mlist.txt 파일이 없다면
-        print('[!] Mlist.txt 파일을 찾을 수 없습니다 [!]')
-        print('[!] 해당 프로그램 파일의 위치와 같은 경로에 있는지 확인해주세요 [!]')
-        time.sleep(1.5)
-        return
+    
 
     # 유효한 링크 수 파악 #
     mlist = open('Mlist.txt','r', encoding='utf-8') # 파일 열기
