@@ -32,9 +32,9 @@ def screenMain():
 def screenPlaytype():
     while True:
         os.system('cls') # 화면 지우기
-        print('Choose play mode..')
-        print('(1) All')
-        print('(2) Favorite(--) only')
+        print('Choose play mode..\n')
+        print('[1] All')
+        print('[2] Favorite(--) only')
         print('\n> ',end='')
         user_select = input()
 
@@ -72,11 +72,11 @@ def screenExplanation():
 def screenPlaytypeAll():
     while True:
         os.system('cls') # 화면 지우기
-        print('Choose All play mode type..')
-        print('(1) from Top to Bottom')
-        print('(2) from Bottom to Top')
-        print('(3) Overlap')
-        print('(4) No Overlap')
+        print('Choose \'All\' play mode type..\n')
+        print('[1] from Top to Bottom')
+        print('[2] from Bottom to Top')
+        print('[3] Overlap')
+        print('[4] No Overlap')
         print('\n> ',end='')
         user_select = input()
 
@@ -103,11 +103,11 @@ def screenPlaytypeAll():
 def screenPlaytypeFav():
     while True:
         os.system('cls') # 화면 지우기
-        print('Choose Favorite play mode type..')
-        print('(1) from Top to Bottom')
-        print('(2) from Bottom to Top')
-        print('(3) Overlap')
-        print('(4) No Overlap')
+        print('Choose \'Favorite\' play mode type..\n')
+        print('[1] from Top to Bottom')
+        print('[2] from Bottom to Top')
+        print('[3] Overlap')
+        print('[4] No Overlap')
         print('\n> ',end='')
         user_select = input()
 
