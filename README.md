@@ -1,5 +1,7 @@
 # URL-based-MusicPlayer 2
 
+![3](https://user-images.githubusercontent.com/50266731/123079919-577d3a00-d457-11eb-9a7b-28df9dc568cc.png)
+
 ## Introduction
 
 - #### 파이썬으로 만들어진 .txt & URL기반 음악 플레이어.
