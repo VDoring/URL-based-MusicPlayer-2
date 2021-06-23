@@ -1,10 +1,11 @@
 # common_cli.py는 모든 화면출력과 메뉴선택을 담당하는 곳입니다.
 import os
 import time
+#from pynput.keyboard import Listener, Key
 
 import common_value as val
 
-#by VDoring. 2021.06.19
+#by VDoring. 2021.06.19z
 #시작화면을 출력하고 메뉴를 선택하게 합니다.
 #리턴값: 1,2
 def screenMain():
@@ -88,8 +89,8 @@ def screenPlaytypeAll():
         print('\n    < Choose \'All\' play mode type.. >    ')
         print('\n\n          [1] from Top to Bottom')
         print('\n          [2] from Bottom to Top')
-        print('\n          [3] Overlap')
-        print('\n          [4] No Overlap')
+        print('\n          [3] Random Overlap')
+        print('\n          [4] Random No Overlap')
         print('\n                 > ',end='')
         user_select = input()
 
@@ -118,11 +119,11 @@ def screenPlaytypeFav():
         os.system('mode con cols=46 lines=14') # 화면 지우기
         os.system('title MP2 - Set mode..') # 윈도우타이틀 설정
 
-        print('\n      Choose \'Favorite\' play mode type..   ')
+        print('\n    < Choose \'Favorite\' play mode type.. > ')
         print('\n\n            [1] from Top to Bottom')
         print('\n            [2] from Bottom to Top')
-        print('\n            [3] Overlap')
-        print('\n            [4] No Overlap')
+        print('\n            [3] Random Overlap')
+        print('\n            [4] Random No Overlap')
         print('\n                   > ',end='')
         user_select = input()
 
