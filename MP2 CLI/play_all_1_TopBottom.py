@@ -1,5 +1,4 @@
 import os
-import time
 
 import common_cli as cli
 import common_value as val
@@ -33,7 +32,7 @@ def playTopBottom():
     for i in mlist_available_links_locate: # 사용가능한 링크 수만큼 반복
         line_index = mlist_all_lines_index[i] # 파일의 한 라인의 텍스트를 저장
         link = line_index.split() # 띄어쓰기 기준으로 문자열 분리
-        os.system('start chrome --incognito ' + link[0]) # 링크가 포함된 크롬 시크릿모드 실행 명령어 실행
+        os.system('start brave --incognito ' + link[0]) # 링크가 포함된 크롬 시크릿모드 실행 명령어 실행
         val.mlist_current_links_play_count += 1 # 지금까지 재생한 링크의 개수 +1
         if val.mlist_available_links_count == val.mlist_current_links_play_count: # 지금까지 재생한 링크의 수와 사용가능한 링크의 수가 같다면(링크를 다 재생했다면)
             return
