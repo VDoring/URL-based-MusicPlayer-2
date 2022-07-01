@@ -1,11 +1,10 @@
 # common_cli.py는 모든 화면출력과 메뉴선택을 담당하는 곳입니다.
 import os
 import time
-#from pynput.keyboard import Listener, Key
 
 import common_value as val
 
-#by VDoring. 2021.06.19z
+#by VDoring. 2021.06.19
 #시작화면을 출력하고 메뉴를 선택하게 합니다.
 #리턴값: 1,2
 def screenMain():
@@ -14,8 +13,8 @@ def screenMain():
         os.system('title MP2 - Title') # 윈도우타이틀 설정
 
         print('\n - -<-< URL-based MusicPlayer 2 >->- - ')
-        print('\n\n           [1] Play')
-        print('\n           [2] Explanation')
+        print('\n\n               [1] Play')
+        print('\n               [2] Info')
         print('\n               > ',end='')
         user_select = input()
 
